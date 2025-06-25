@@ -1,0 +1,57 @@
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST-APP</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ </head>
+ <body>
+    <div class="w-full min-h-screen bg-zinc-900 text-white">
+        <h3 class="text-3xl p-5 mb-10">Upload Profile-pic</h3>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" class="border-2">
+           
+            
+            <input type="submit" value="Upload File " class="bg-blue-500 p-3 rounded-md">
+        </form>
+    </div>
+ </body>
+ </html> -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>POST-APP | Upload Profile Pic</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-zinc-900 text-white min-h-screen flex items-center justify-center px-4">
+
+  <div class="w-full max-w-md bg-zinc-800 p-8 rounded-2xl shadow-lg">
+    <h3 class="text-2xl font-semibold mb-6 text-center">Upload Profile Picture</h3>
+
+    <form action="/upload" method="post" enctype="multipart/form-data" class="space-y-6">
+      <div>
+        <label class="block text-sm text-zinc-400 mb-2" for="image">Choose Image</label>
+        <input 
+          type="file" 
+          name="image" 
+          id="image"
+          class="w-full text-sm file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold
+                 file:bg-blue-500 file:text-white hover:file:bg-blue-600 transition cursor-pointer bg-zinc-700 p-2 rounded-md"
+          required
+        />
+      </div>
+
+      <input 
+        type="submit" 
+        value="Upload File" 
+        class="w-full bg-green-500 hover:bg-green-400 transition text-black font-semibold py-3 rounded-md cursor-pointer"
+      />
+    </form>
+  </div>
+
+</body>
+</html>
